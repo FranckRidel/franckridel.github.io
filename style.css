@@ -1,0 +1,164 @@
+*{
+	word-wrap: break-word;
+}
+
+body{
+	background-image: url(images/marble.jpg);
+	background-repeat: repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+a{
+	color: black;
+}
+
+a:hover{
+	color: blue;
+}
+
+h1{
+	text-align: center;
+	text-shadow: 6px 4px 6px #5a5a5a;
+	font-size: 38px;
+}
+
+h2{
+	color: darkred;
+	margin-left: 5px;
+	font-size: 28px;
+	text-decoration: underline;
+}
+
+h3{
+	color: red;
+}
+
+h3 a{
+	color: red;
+}
+
+h3 a:hover{
+	color: blue;
+}
+
+#page{
+	width: 98%;
+}
+
+#identite{
+	float: right;	
+	border: 1px solid purple;
+	background-color: lightgrey;
+	width: 25%;
+	min-width: 220px;
+	max-width: 300px;
+	margin-right: 2%;
+	padding-top: 0px;
+	padding-left: 5px;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px 0px black;
+}
+
+#photo{
+	float: right;
+	border-radius: 5px;
+	padding-top: 3px;
+	padding-right: 3px;
+	width: 130px;
+	height: 130px;
+	border-radius: 10px;
+}
+
+#photo:hover{
+	content: url('images/mini2.JPG')
+}
+
+#arrowdown{
+	display: none;
+}
+
+#identite:hover{
+	box-shadow: 6px 6px 6px 0px red;
+}
+
+#identite h2{
+	text-decoration: none;
+	color: purple;
+	margin-bottom: 1px;
+	margin-top: 28px;
+}
+
+#identite p{
+	margin-right: 15px;
+}
+
+#formation{
+	width: 30%;
+	min-width: 270px;
+	float: left; 
+	margin-left: 2%;
+	padding-left: 12px;
+}
+
+#experience{
+	width: 30%;
+	min-width: 270px;
+	float: left;
+	margin-left: 2%;
+	padding-left: 12px;
+}
+
+@media screen and (max-width: 900px){
+	
+	#identite{
+		width: 96%;
+		min-width: 400px;
+		max-width: 720px;
+		height: 250px;
+		margin-left: 6px;
+		padding-left: 8px;
+		overflow: hidden;
+	}
+
+	#identite:hover{
+		height: 100%;
+	}
+
+	#arrowdown{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		top: 20px;
+	}
+
+	#identite:hover ~ #arrowdown{
+		content: url('images/arrowup.png')
+	}
+
+	#experience{
+		width: 30%;
+		margin-left: 2%;
+		border-left: 1px solid lightgrey;
+		padding-left: 12px;
+		overflow: auto;
+	}
+
+	#formation{
+		width: 30%;
+		margin-left: 2%;
+		border-left: 1px solid lightgrey;
+		padding-left: 12px;
+		overflow: auto;
+	}
+}
+
+@media screen and (max-width: 500px){
+	#identite{
+		width: 96%;
+		min-width: 300px;
+	}
+}
+
+.name{
+	font-size: 20px;
+}
