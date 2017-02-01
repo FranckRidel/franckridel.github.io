@@ -2,12 +2,6 @@
 	word-wrap: break-word;
 }
 
-body{
-	background-image: url(images/marble.jpg);
-	background-repeat: repeat;
-	background-position: center;
-	background-attachment: fixed;
-}
 a{
 	color: black;
 }
