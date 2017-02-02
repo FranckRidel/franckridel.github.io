@@ -1,9 +1,10 @@
-*{
-	word-wrap: break-word;
+@font-face{
+	font-family: 'kaushan';
+	src: url('kaushan-script/KaushanScript-Regular.otf') format('opentype');
 }
 
-body{
-	background: linear-gradient(135deg, lightblue, lightgreen);
+*{
+	word-wrap: break-word;
 }
 
 a{
@@ -21,15 +22,16 @@ a:visited{
 
 h1{
 	text-align: center;
-	text-shadow: 6px 4px 8px #5a5a5a;
-	font-size: 38px;
+	text-shadow: 4px 2px 8px #5a5a5a;
+	font-size: 3em;
+	font-family: kaushan;
 }
 
 h2{
 	color: #4c4c4c;
 	text-shadow: 2px 2px 6px darkgrey;
 	margin-left: 5px;
-	font-size: 28px;
+	font-size: 2.1em;
 	text-decoration: underline;
 }
 
